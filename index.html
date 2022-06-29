@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fonts/pt/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Оформление заказа</h1>
+
+    <div class="main-container">
+        <div class="left-container">
+
+            <div class="subtitle-buttons">
+                <div class="sub-title">
+                    <h2>Доставка</h2>
+                </div>
+                <div class="adress-buttons">
+                    <button class="adress-btn"><img src="/img/svg/left.svg" alt="previous-adress"></button>
+                    <button class="adress-btn"><img src="/img/svg/right.svg" alt="next-adress"></button>
+                </div>
+            </div>
+
+            <div class="adress-container">
+                <div class="adress-container__adress active">
+                    <div class="adress-container__adress-info">
+                        <div class="adress-container__type-del">
+                            <span>Почта России, курьер - 24-26 сент.</span>
+                        </div>
+                        <div class="adress-container__adress-del">
+                            <span>ул. Академика Королева, 73/3, Петропавловск- Камчатский, 683000</span>
+                        </div>
+                    </div>
+                    <div class="adress-container__price">
+                        <span>+367 ₽</span>
+                    </div>
+                </div>
+                <div class="adress-container__adress">
+                    <div class="adress-container__adress-info">
+                        <div class="adress-container__type-del">
+                            <span>Лабиринт, курьер — 25 сент.</span>
+                        </div>
+                        <div class="adress-container__adress-del">
+                            <span>Можайское шоссе, д. 21, кв. 50, Москва, 121471</span>
+                        </div>
+                    </div>
+                    <div class="adress-container__price">
+                        <span>0 ₽</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-place"><a href="#">Выбрать новое место и способ</a></div>
+            
+            <div class="date-container">
+                <div class="date-container__date active">
+                    <div class="date-container__date1">
+                        <span>пн, 24 сен — ср, 26 сен</span>
+                    </div>
+                    <div class="date-container__time">
+                        <span>10:00–19:00</span>
+                    </div>
+                </div>
+                <div class="date-container__date">
+                    <div class="date-container__date1">
+                        <span>чт, 27 сен — пт, 28 сен</span>
+                    </div>
+                    <div class="date-container__time">
+                        <span>10:00–19:00</span>
+                    </div>
+                </div>
+                <div class="date-container__moredates"><a href="#">Другие дата и время</a></div>
+            </div>
+
+            <div class="options-container">
+                <div class="options-container__option">
+                    <input class="checkbox" type="checkbox" id="sms" name="sms" checked>
+                    <label for="sms">Viber/СМС уведомления о статусе заказа</label>
+                </div>
+                <div class="options-container__option">
+                    <input class="checkbox" type="checkbox" id="contactless-del" name="sms" checked disabled>
+                    <label for="contactless-del">Оставить у двери (бесконтактная доставка)</label>
+                </div>
+            </div>
+
+            <h2>Получатель</h2>
+
+            <div class="client-container">
+                <div class="client-container__buyer">
+                    <input class="client-container__input" type="text" list="buyer"/>
+                    <select id="buyer">
+                        <option value="Покупатель2">Получатель1</option>
+                        <option value="Покупатель1">Получатель2</option>
+                        <option value="Покупатель3">Получатель3</option>
+                        <option value="Покупатель4">Получатель4</option>
+                        <option value="Покупатель5">Получатель5</option>
+                    </select>
+                    <div class="client-container__new-buyer-link"><a href="#">Новый получатель</a></div>
+                </div>
+                <div class="client-container__phone">
+                    <input class="client-container__input" type="text" list="phone"/>
+                    <select id="phone">
+                        <option value="Номер1">Номер1</option>
+                        <option value="Номер2">Номер2</option>
+                        <option value="Номер3">Номер3</option>
+                        <option value="Номер4">Номер4</option>
+                        <option value="Номер5">Номер5</option>
+                    </select>
+                    <div class="client-container__new-phone-link"><a href="#">Новый телефон</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="details-order">
+                <h2>В заказе 4 товара <span class="weight">(2 кг)</span></h2>
+                <div class="prices">
+                    <div class="words">Цена товаров</div>
+                    <div class="numbers">29 456 ₽</div>
+                </div>
+                <div class="discount">
+                    <div class="words">Все скидки</div>
+                    <div class="numbers">-7 732 ₽</div>
+                </div>
+                <div class="discount-pre-order">
+                    <div class="words">Скидка за предоплату</div>
+                    <div class="numbers">-3%</div>
+                </div>
+            </div>
+            <hr class="hr">
+        </div>
+    </div>
+    <div class="footer">
+        <button class="footer__confirm"><span class="footer__confirm-label">Оформить и оплатить</span></button>
+        <div class="score">
+            <div class="footer__words">Итого к оплате на сайте:</div>
+            <div class="footer__score">21 072 ₽</div>
+        </div>
+    </div>
+</body>
+</html>
