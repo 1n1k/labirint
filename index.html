@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fonts/pt/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
+    <link media="all and (max-width: 480px)" rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
     <h1>Оформление заказа</h1>
 
-    <div class="main-container">
+    <div class="main-container"> 
         <div class="left-container">
 
             <div class="subtitle-buttons">
@@ -20,11 +21,13 @@
                     <h2>Доставка</h2>
                 </div>
                 <div class="adress-buttons">
-                    <button class="adress-btn"><img src="/img/svg/left.svg" alt="previous-adress"></button>
-                    <button class="adress-btn"><img src="/img/svg/right.svg" alt="next-adress"></button>
+                    <button class="adress-btn"><img src="img/svg/left.svg" alt="previous-adress"></button>
+                    <button class="adress-btn"><img src="img/svg/right.svg" alt="next-adress"></button>
                 </div>
             </div>
 
+
+            <!-- десктопная версия -->
             <div class="adress-container">
                 <div class="adress-container__adress active">
                     <div class="adress-container__adress-info">
@@ -54,19 +57,46 @@
                 </div>
             </div>
 
+            <!-- мобильная версия -->
+            <div class="mob-adress-container">
+                <div class="mob-adress-container__adress active">
+                    <div class="mob-adress-container__type-del">
+                        <span>Почта России, курьер - 24-26 сент.</span>
+                    </div>
+                    <div class="mob-adress-container__price">
+                        <span>+367 ₽</span>
+                    </div>
+                    <div class="mob-adress-container__adress-del">
+                        <span>ул. Академика Королева, 73/3, Петропавловск- Камчатский, 683000</span>
+                    </div>
+                </div>
+                <div class="mob-adress-container__adress">
+                    <div class="mob-adress-container__type-del">
+                        <span>Лабиринт, курьер — 25 сент.</span>
+                    </div>
+                    <div class="mob-adress-container__price">
+                        <span>0 ₽</span>
+                    </div>
+                    <div class="mob-adress-container__adress-del">
+                        <span>Можайское шоссе, д. 21, кв. 50, Москва, 121471</span>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="new-place"><a href="#">Выбрать новое место и способ</a></div>
             
             <div class="date-container">
-                <div class="date-container__date active">
-                    <div class="date-container__date1">
-                        <span>пн, 24 сен — ср, 26 сен</span>
+                <div class="date-container__date-time active">
+                    <div class="date-container__date">
+                        <span>пн, 24 сен<!-- — ср, 26 сен--></span>
                     </div>
                     <div class="date-container__time">
                         <span>10:00–19:00</span>
                     </div>
                 </div>
-                <div class="date-container__date">
-                    <div class="date-container__date1">
+                <div class="date-container__date-time">
+                    <div class="date-container__date">
                         <span>чт, 27 сен — пт, 28 сен</span>
                     </div>
                     <div class="date-container__time">
@@ -75,6 +105,7 @@
                 </div>
                 <div class="date-container__moredates"><a href="#">Другие дата и время</a></div>
             </div>
+            <div class="mob-date-container__moredates"><a href="#">Другие дата и время</a></div>
 
             <div class="options-container">
                 <div class="options-container__option">
@@ -87,8 +118,8 @@
                 </div>
             </div>
 
-            <h2>Получатель</h2>
-
+ 
+            <h2 class="recipient-sub-title">Получатель</h2>
             <div class="client-container">
                 <div class="client-container__buyer">
                     <input class="client-container__input" type="text" list="buyer"/>
@@ -113,6 +144,40 @@
                     <div class="client-container__new-phone-link"><a href="#">Новый телефон</a></div>
                 </div>
             </div>
+
+
+            <!-- mobile  -->
+            <div class="mob-client-container">
+                <div class="mob-client-container__recipient-new-recipient">
+                    <div class="mob-client-container__subtitle"><h2>Получатель</h2></div>
+                    <div class="mob-client-container__new-buyer-link"><a href="#">Новый получатель</a></div>
+                </div>
+                <div class="mob-client-container__input-buyer">
+                    <input class="mob-client-container__input" type="text" list="buyer"/>
+                    <select>
+                        <option value="Покупатель2">Получатель1</option>
+                        <option value="Покупатель1">Получатель2</option>
+                        <option value="Покупатель3">Получатель3</option>
+                        <option value="Покупатель4">Получатель4</option>
+                        <option value="Покупатель5">Получатель5</option>
+                    </select>
+                </div>
+                <div class="mob-client-container__phone">
+                    <div class="mob-client-container__input-phone">
+                        <input class="mob-client-container__input" type="text" list="phone"/>
+                        <select>
+                            <option value="Номер1">Номер1</option>
+                            <option value="Номер2">Номер2</option>
+                            <option value="Номер3">Номер3</option>
+                            <option value="Номер4">Номер4</option>
+                            <option value="Номер5">Номер5</option>
+                        </select>
+                    </div>
+                    <div class="mob-client-container__new-phone-link">
+                        <a href="#">Новый телефон</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="right-container">
@@ -134,11 +199,23 @@
             <hr class="hr">
         </div>
     </div>
+    
     <div class="footer">
         <button class="footer__confirm"><span class="footer__confirm-label">Оформить и оплатить</span></button>
-        <div class="score">
-            <div class="footer__words">Итого к оплате на сайте:</div>
-            <div class="footer__score">21 072 ₽</div>
+        <div class="footer__score">
+            <div class="footer__text">Итого к оплате на сайте:</div>
+            <div class="footer__price">21 072 ₽</div>
+        </div>
+    </div>
+
+    <!-- mobile footer -->
+    <div class="mob-footer">
+        <div class="mob-footer__price-deatils">
+            <div class="mob-footer__price">К оплате: 21 072 ₽</div>
+            <div class="mob-footer__details"><a href="#">Подробнее</a></div>
+        </div>
+        <div class="mob-footer__btn-confirm">
+            <button class="mob-footer__confirm"><span class="mob-footer__confirm-label">Оформить и оплатить</span></button>
         </div>
     </div>
 </body>
