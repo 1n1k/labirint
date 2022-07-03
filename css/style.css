@@ -28,7 +28,7 @@ h2 {
     color: #333333;
     font-weight: 700;
     line-height: 37px;
-    margin-bottom: 17px;
+    /* margin-bottom: 17px; */
 }
 
 a {
@@ -250,6 +250,7 @@ a {
     padding: 19px 184px 20px 120px;
     height: 119px;
     background: #f8f8f8;
+    border-top: 1px solid #C5C5C5;
 }
 
 .footer__confirm {
@@ -298,6 +299,9 @@ a {
     background: #D6D6D6;
 }
 
+.popup-bg {
+    display: none;
+}
 
 
 
