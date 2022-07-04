@@ -42,15 +42,20 @@ a {
     display: flex;
     justify-content: space-between;
     background: white;
-    border: 1px solid #C5C5C5;
+    border: 1px solid #8C8C8C;
     border-radius: 4px;
     margin: 19px 85px 0 77px;
-    padding: 40px 86px 0 43px;
+    /* padding: 40px 86px 0 43px; */
     height: 100%;
 }
 
 .left-container {
-    margin-right: 133px;
+    margin-right: 50px;
+    padding-right: 82px;
+    padding-top: 40px;
+    margin-left: 40px;
+    border-right: 1px solid #C5C5C5;
+    /* padding-right: 20px; */
 }
 
 .subtitle-buttons {
@@ -153,13 +158,13 @@ a {
     margin-right: 14px;
     padding: 20px;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
-/* .date-container__date:last-child {
+.date-container__date-time:last-child {
     margin-right: 30px;
-} */
+}
 
 .date-container__date-time.active , .adress-container__adress.active{
     outline: 2px solid #065CC2;
@@ -190,6 +195,30 @@ a {
     display: flex;
 }
 
+.client-container__buyer select {
+    width: 572px;
+    height: 74px;
+    margin-bottom: 14px;
+    padding-left: 14px;
+    font-weight: 700;
+    font-family: 'PT Root UI';
+    font-size: 22px;
+    line-height: 28px;
+}
+
+
+
+.client-container__phone select {
+    width: 287px;
+    height: 74px;
+    margin-bottom: 14px;
+    padding-left: 14px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: 'PT Root UI';
+}
+
 .client-container__buyer {
     margin: 0 14px 14px 0;
 }
@@ -202,6 +231,8 @@ a {
     /* margin: 0 86px 0 50px; */
     width: 489px;
     height: 37px;
+    margin-top: 40px;
+    margin-right: 86px;
 }
 
 .weight {
