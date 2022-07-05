@@ -1,6 +1,6 @@
 body {
     font-weight: 400;
-    /* width: 360px; */
+    font-family: 'PT Root UI';
 }
 
 h1 {
@@ -23,13 +23,10 @@ h2 {
     margin: 0;
     border-style: none;
     border-radius: 0;
-    /* padding: 0; */
     padding: 24px 0 8px 16px;
-    /* width: 100vw; */
 }
 
 .left-container {
-    /* width: 100vw; */
     width: 100%;
     padding: 0;
     margin: 0;
@@ -46,7 +43,6 @@ h2 {
 
 .mob-adress-container {
     display: flex;
-    /* margin-bottom: 12px; */
     overflow-x: scroll;
     padding: 2px;
 }
@@ -56,7 +52,6 @@ h2 {
 }
 
 .mob-adress-container__adress {
-    /* box-sizing: content-box; */
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -67,7 +62,6 @@ h2 {
     cursor: pointer;
     width: 300px;
     min-height: 114px;
-    /* flex: 0 0 auto; */
 }
 
 .mob-adress-container__adress.active{
@@ -112,7 +106,6 @@ h2 {
 
 }
 .date-container__date {
-    /* width: 117px; */
     font-size: 17px;
     line-height: 21px;
 }
@@ -152,26 +145,51 @@ h2 {
 }
 
 .mob-client-container select {
-    height: 69px;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid #d6d6d6;
-    margin-bottom: 14px;
-    padding-left: 14px;
+    appearance: none;
+    border: none;
     font-weight: 700;
     font-family: 'PT Root UI';
     font-size: 17px;
     line-height: 21px;
 }
 
-.mob-client-container__input-buyer {
+.mob-client-container label {
+    display: block;
+    font-weight: 400;
+
+}
+
+.mob-client-container__select-name {
+    height: 69px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 14px;
+    padding: 15px 21px 15px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mob-client-container__select-phone {
+    height: 69px;
+    border-radius: 4px;
+    border: 1px solid #d6d6d6;
+    padding: 15px 21px 15px 16px;
+    font-weight: 700;
+    font-family: 'PT Root UI';
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mob-client-container__select-label-name {
     margin-bottom: 8px;
 }
 
-/* .mob-client-container__input-buyer select {
-    width: 100%;
-
-} */
+.client-container__select-arrow img{
+    padding: 15px 0;
+}
 
 .mob-client-container__recipient-new-recipient {
     display: flex;
@@ -185,9 +203,6 @@ h2 {
     line-height: 20px;
 }
 
-/* .mob-client-container__input-phone {
-    margin-bottom: 0;
-} */
 
 .mob-client-container__new-phone-link {
     width: 100px;
@@ -196,9 +211,7 @@ h2 {
 
 .mob-client-container__phone {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    /* width: 300px; */
 }
 
 .mob-client-container__phone a {
@@ -230,11 +243,9 @@ h2 {
     padding: 16px;
     position: sticky;
     bottom: 0;
-    /* padding: 19px 184px 20px 120px; */
     height: 118px;
     background: #f8f8f8;
     border-top: 1px solid #C5C5C5;
-    /* width: 360px; */
 }
 
 .mob-footer__price-deatils {
@@ -295,14 +306,10 @@ h2 {
 
 .popup {
     position: absolute;
-    /* top: 50%; */
-    /* left: 50%; */
     width: 100%;
     max-height: 100%;
     background: #fff;
     padding: 20px;
-    /* transform: translate(-50%, -50%); */
-    /* display: none; */
     height: 100%;
 }
 
@@ -317,7 +324,6 @@ h2 {
 }
 
 .popup__hr {
-    /* width: 360px; */
     margin: 20px 0;
     color: #D6D6D6;
 }
@@ -342,7 +348,6 @@ h2 {
     height: 84px;
     display: flex;
     justify-content: center;
-    /* align-items: flex-end; */
     position: sticky;
     top: 100%;
     border-top: 1px solid #f8f8f8
